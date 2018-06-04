@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ubs.opsit.interviews.BerlinClockFixture" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-06-03T19:26:18" hostname="Pratik-PC" time="1.0">
+  <properties/>
+  <testcase name="berlinClockAcceptanceTests" classname="com.ubs.opsit.interviews.BerlinClockFixture" time="1.0"/>
+  <system-out><![CDATA[2018-06-04T00:56:19.001 | est worker | ClasspathStoryFinder | INFO   - Searching for stories called [berlin-clock.story] in [[D:\java-berlin-clock-master\build\classes\test, D:\java-berlin-clock-master\build\resources\test, D:\java-berlin-clock-master\build\classes\main]] 
+2018-06-04T00:56:19.026 | est worker | aviouralTestEmbedder | INFO   - Running [BehaviouralTestEmbedder] with spring_stories [[file:/D:/java-berlin-clock-master/build/resources/test/stories/berlin-clock.story]] 
+Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,threads=1]
+Running story file:/D:/java-berlin-clock-master/build/resources/test/stories/berlin-clock.story
+Story: The Berlin Clock
+(file:/D:/java-berlin-clock-master/build/resources/test/stories/berlin-clock.story)
+Meta:
+@scope interview
+
+Scenario: Midnight
+When the time is 00:00:00
+Then the clock should look like
+Y
+OOOO
+OOOO
+OOOOOOOOOOO
+OOOO
+
+Scenario: Middle of the afternoon
+When the time is 13:17:01
+Then the clock should look like
+O
+RROO
+RRRO
+YYROOOOOOOO
+YYOO
+
+Scenario: Just before midnight
+When the time is 23:59:59
+Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYRYYRYY
+YYYY
+
+Scenario: Midnight
+When the time is 24:00:00
+Then the clock should look like
+Y
+RRRR
+RRRR
+OOOOOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 00:00:01
+Then the clock should look like
+O
+OOOO
+OOOO
+OOOOOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 05:00:01
+Then the clock should look like
+O
+ROOO
+OOOO
+OOOOOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 10:00:01
+Then the clock should look like
+O
+RROO
+OOOO
+OOOOOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 15:00:01
+Then the clock should look like
+O
+RRRO
+OOOO
+OOOOOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 20:00:01
+Then the clock should look like
+O
+RRRR
+OOOO
+OOOOOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 21:00:01
+Then the clock should look like
+O
+RRRR
+ROOO
+OOOOOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 22:00:01
+Then the clock should look like
+O
+RRRR
+RROO
+OOOOOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 23:00:01
+Then the clock should look like
+O
+RRRR
+RRRO
+OOOOOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 23:05:01
+Then the clock should look like
+O
+RRRR
+RRRO
+YOOOOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 23:10:01
+Then the clock should look like
+O
+RRRR
+RRRO
+YYOOOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 23:15:01
+Then the clock should look like
+O
+RRRR
+RRRO
+YYROOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 23:20:01
+Then the clock should look like
+O
+RRRR
+RRRO
+YYRYOOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 23:25:01
+Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYOOOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 23:30:01
+Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYROOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 23:35:01
+Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYRYOOOO
+OOOO
+
+Scenario: Midnight
+When the time is 23:40:01
+Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYRYYOOO
+OOOO
+
+Scenario: Midnight
+When the time is 23:45:01
+Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYRYYROO
+OOOO
+
+Scenario: Midnight
+When the time is 23:50:01
+Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYRYYRYO
+OOOO
+
+Scenario: Midnight
+When the time is 23:55:01
+Then the clock should look like
+O
+RRRR
+RRRO
+YYRYYRYYRYY
+OOOO
+
+Scenario: Midnight
+When the time is 23:01:01
+Then the clock should look like
+O
+RRRR
+RRRO
+OOOOOOOOOOO
+YOOO
+
+Scenario: Midnight
+When the time is 23:02:01
+Then the clock should look like
+O
+RRRR
+RRRO
+OOOOOOOOOOO
+YYOO
+
+Scenario: Midnight
+When the time is 23:03:01
+Then the clock should look like
+O
+RRRR
+RRRO
+OOOOOOOOOOO
+YYYO
+
+Scenario: Midnight
+When the time is 23:04:01
+Then the clock should look like
+O
+RRRR
+RRRO
+OOOOOOOOOOO
+
+(BeforeStories)
+
+
+(AfterStories)
+
+Generating reports view to 'D:\java-berlin-clock-master\build\classes\jbehave' using formats '[stats, html, console]' and view properties '{defaultFormats=stats, decorateNonHtml=true, viewDirectory=view, decorated=ftl/jbehave-report-decorated.ftl, reports=ftl/jbehave-reports-with-totals.ftl, maps=ftl/jbehave-maps.ftl, navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl}'
+Reports view generated with 1 stories (of which 0 pending) containing 27 scenarios (of which 0 pending)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

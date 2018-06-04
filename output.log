@@ -1,0 +1,350 @@
+Starting Build
+Settings evaluated using empty settings script.
+Projects loaded. Root project using build file 'D:\java-berlin-clock-master\build.gradle'.
+Included projects: [root project 'java-berlin-clock-master']
+Evaluating root project 'java-berlin-clock-master' using build file 'D:\java-berlin-clock-master\build.gradle'.
+All projects evaluated.
+No tasks specified. Using project default tasks 'clean', 'build'
+Selected primary tasks 'DefaultTaskParameter{taskName='clean',projectPath='null'}', 'DefaultTaskParameter{taskName='build',projectPath='null'}'
+Tasks to be executed: [task ':clean', task ':compileJava', task ':processResources', task ':classes', task ':jar', task ':assemble', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test', task ':check', task ':build']
+:clean (Thread[main,5,main]) started.
+:clean
+Executing task ':clean' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:clean (Thread[main,5,main]) completed. Took 0.093 secs.
+:compileJava (Thread[main,5,main]) started.
+:compileJava
+Executing task ':compileJava' (up-to-date check took 0.412 secs) due to:
+  Output file D:\java-berlin-clock-master\build\classes\main has changed.
+  Output file D:\java-berlin-clock-master\build\dependency-cache has changed.
+  Output file D:\java-berlin-clock-master\build\classes\main\com\ubs\opsit\interviews\TimeConverter.class has been removed.
+All input files are considered out-of-date for incremental task ':compileJava'.
+Compiling with JDK Java compiler API.
+:compileJava (Thread[main,5,main]) completed. Took 1.064 secs.
+:processResources (Thread[main,5,main]) started.
+:processResources
+Skipping task ':processResources' as it has no source files.
+:processResources UP-TO-DATE
+:processResources (Thread[main,5,main]) completed. Took 0.002 secs.
+:classes (Thread[main,5,main]) started.
+:classes
+Skipping task ':classes' as it has no actions.
+:classes (Thread[main,5,main]) completed. Took 0.002 secs.
+:jar (Thread[main,5,main]) started.
+:jar
+Executing task ':jar' (up-to-date check took 0.017 secs) due to:
+  Output file D:\java-berlin-clock-master\build\libs\java-berlin-clock-master-1.0-SNAPSHOT.jar has changed.
+  Output file D:\java-berlin-clock-master\build\libs\java-berlin-clock-master-1.0-SNAPSHOT.jar has been removed.
+:jar (Thread[main,5,main]) completed. Took 0.085 secs.
+:assemble (Thread[main,5,main]) started.
+:assemble
+Skipping task ':assemble' as it has no actions.
+:assemble (Thread[main,5,main]) completed. Took 0.001 secs.
+:compileTestJava (Thread[main,5,main]) started.
+:compileTestJava
+Executing task ':compileTestJava' (up-to-date check took 0.139 secs) due to:
+  Output file D:\java-berlin-clock-master\build\dependency-cache has changed.
+  Output file D:\java-berlin-clock-master\build\classes\test has changed.
+  Output file D:\java-berlin-clock-master\build\classes\test\com\ubs\opsit\interviews\support\ClasspathStoryFinder.class has been removed.
+All input files are considered out-of-date for incremental task ':compileTestJava'.
+Compiling with JDK Java compiler API.
+:compileTestJava (Thread[main,5,main]) completed. Took 0.355 secs.
+:processTestResources (Thread[main,5,main]) started.
+:processTestResources
+Executing task ':processTestResources' (up-to-date check took 0.004 secs) due to:
+  Output file D:\java-berlin-clock-master\build\resources\test has changed.
+  Output file D:\java-berlin-clock-master\build\resources\test\stories\berlin-clock.story has been removed.
+  Output file D:\java-berlin-clock-master\build\resources\test\log4j.xml has been removed.
+:processTestResources (Thread[main,5,main]) completed. Took 0.205 secs.
+:testClasses (Thread[main,5,main]) started.
+:testClasses
+Skipping task ':testClasses' as it has no actions.
+:testClasses (Thread[main,5,main]) completed. Took 0.003 secs.
+:test (Thread[main,5,main]) started.
+:test
+Executing task ':test' (up-to-date check took 0.068 secs) due to:
+  Output file D:\java-berlin-clock-master\build\reports\tests has changed.
+  Output file D:\java-berlin-clock-master\build\test-results has changed.
+  Output file D:\java-berlin-clock-master\build\test-results\binary\test has changed.
+Starting process 'Gradle Test Executor 1'. Working directory: D:\java-berlin-clock-master Command: C:\Program Files\Java\jdk1.8.0_172\bin\java.exe -Djava.security.manager=jarjar.org.gradle.process.internal.child.BootstrapSecurityManager -Dfile.encoding=windows-1252 -ea -cp C:\Users\Pratik\.gradle\caches\2.0\workerMain\gradle-worker.jar jarjar.org.gradle.process.internal.launcher.GradleWorkerMain
+Successfully started process 'Gradle Test Executor 1'
+Gradle Test Executor 1 started executing tests.
+
+com.ubs.opsit.interviews.BerlinClockFixture > berlinClockAcceptanceTests STANDARD_OUT
+    2018-06-04T00:56:19.001 | est worker | ClasspathStoryFinder | INFO   - Searching for stories called [berlin-clock.story] in [[D:\java-berlin-clock-master\build\classes\test, D:\java-berlin-clock-master\build\resources\test, D:\java-berlin-clock-master\build\classes\main]] 
+    2018-06-04T00:56:19.026 | est worker | aviouralTestEmbedder | INFO   - Running [BehaviouralTestEmbedder] with spring_stories [[file:/D:/java-berlin-clock-master/build/resources/test/stories/berlin-clock.story]] 
+    Processing system properties {}
+    Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,threads=1]
+    Running story file:/D:/java-berlin-clock-master/build/resources/test/stories/berlin-clock.story
+    Story: The Berlin Clock
+    (file:/D:/java-berlin-clock-master/build/resources/test/stories/berlin-clock.story)
+    Meta:
+    @scope interview
+
+    Scenario: Midnight
+    When the time is 00:00:00
+    Then the clock should look like
+    Y
+    OOOO
+    OOOO
+    OOOOOOOOOOO
+    OOOO
+
+    Scenario: Middle of the afternoon
+    When the time is 13:17:01
+    Then the clock should look like
+    O
+    RROO
+    RRRO
+    YYROOOOOOOO
+    YYOO
+
+    Scenario: Just before midnight
+    When the time is 23:59:59
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YYRYYRYYRYY
+    YYYY
+
+    Scenario: Midnight
+    When the time is 24:00:00
+    Then the clock should look like
+    Y
+    RRRR
+    RRRR
+    OOOOOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 00:00:01
+    Then the clock should look like
+    O
+    OOOO
+    OOOO
+    OOOOOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 05:00:01
+    Then the clock should look like
+    O
+    ROOO
+    OOOO
+    OOOOOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 10:00:01
+    Then the clock should look like
+    O
+    RROO
+    OOOO
+    OOOOOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 15:00:01
+    Then the clock should look like
+    O
+    RRRO
+    OOOO
+    OOOOOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 20:00:01
+    Then the clock should look like
+    O
+    RRRR
+    OOOO
+    OOOOOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 21:00:01
+    Then the clock should look like
+    O
+    RRRR
+    ROOO
+    OOOOOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 22:00:01
+    Then the clock should look like
+    O
+    RRRR
+    RROO
+    OOOOOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:00:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    OOOOOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:05:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YOOOOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:10:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YYOOOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:15:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YYROOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:20:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YYRYOOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:25:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YYRYYOOOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:30:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YYRYYROOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:35:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YYRYYRYOOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:40:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YYRYYRYYOOO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:45:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YYRYYRYYROO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:50:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YYRYYRYYRYO
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:55:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    YYRYYRYYRYY
+    OOOO
+
+    Scenario: Midnight
+    When the time is 23:01:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    OOOOOOOOOOO
+    YOOO
+
+    Scenario: Midnight
+    When the time is 23:02:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    OOOOOOOOOOO
+    YYOO
+
+    Scenario: Midnight
+    When the time is 23:03:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    OOOOOOOOOOO
+    YYYO
+
+    Scenario: Midnight
+    When the time is 23:04:01
+    Then the clock should look like
+    O
+    RRRR
+    RRRO
+    OOOOOOOOOOO
+
+    (BeforeStories)
+
+
+    (AfterStories)
+
+    Generating reports view to 'D:\java-berlin-clock-master\build\classes\jbehave' using formats '[stats, html, console]' and view properties '{defaultFormats=stats, decorateNonHtml=true, viewDirectory=view, decorated=ftl/jbehave-report-decorated.ftl, reports=ftl/jbehave-reports-with-totals.ftl, maps=ftl/jbehave-maps.ftl, navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl}'
+Gradle Test Executor 1 finished executing tests.
+    Reports view generated with 1 stories (of which 0 pending) containing 27 scenarios (of which 0 pending)
+Finished generating test XML results (0.018 secs) into: D:\java-berlin-clock-master\build\test-results
+Generating HTML test report...
+Finished generating test html results (0.029 secs) into: D:\java-berlin-clock-master\build\reports\tests
+:test (Thread[main,5,main]) completed. Took 2.325 secs.
+:check (Thread[main,5,main]) started.
+:check
+Skipping task ':check' as it has no actions.
+:check (Thread[main,5,main]) completed. Took 0.001 secs.
+:build (Thread[main,5,main]) started.
+:build
+Skipping task ':build' as it has no actions.
+:build (Thread[main,5,main]) completed. Took 0.0 secs.
+
+BUILD SUCCESSFUL
+
+Total time: 8.097 secs
+Stopped 0 compiler daemon(s).
